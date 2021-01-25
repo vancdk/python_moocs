@@ -15,4 +15,16 @@ print(file_size(('Notes', 'txt', 496))) # Should print 0.48
 print(file_size(('Program', 'py', 1239))) # Should print 1.21
 
 
+# The skip_elements function returns every other element from the list
+# It uses the enumerate function to check if an element is on an even position or an odd position.
 
+def skip_elements(elements):
+	# code goes here
+	new_list = []
+	for index, element in enumerate(elements):
+		if index % 2 == 0:
+			new_list.append(element)
+	return new_list
+
+print(skip_elements(["a", "b", "c", "d", "e", "f", "g"])) # Should be ['a', 'c', 'e', 'g']
+print(skip_elements(['Orange', 'Pineapple', 'Strawberry', 'Kiwi', 'Peach'])) # Should be ['Orange', 'Strawberry', 'Peach']
