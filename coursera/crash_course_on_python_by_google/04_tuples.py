@@ -1,10 +1,15 @@
-# Tuples can contain elements of any data type, but unlike lists, they are immutable.
-# They’re specified using parentheses instead of square brackets.
-# Storing the elements of a tuple in separate variables is called unpacking. 
-# This allows us to take multiple returned values from a function and store each value in its own variable.
+""" 
+Tuples can contain elements of any data type, but unlike lists, they are immutable.
+They’re specified using parentheses instead of square brackets.
+  
+  * Storing the elements of a tuple in separate variables is called unpacking. 
+  This allows us to take multiple returned values from a function and store each value in its own variable.
+  
+  * The enumerate() function takes a list as a parameter and returns a tuple for each element in the list. 
+  The first value of the tuple is the index and the second value is the element itself. 
+"""
 
-# We can use tuples to store information about a file: its name, its type and its size in bytes. 
-# file_size() returns the size in kilobytes (a kilobyte is 1024 bytes) up to 2 decimal places. 
+# The file_size() function returns the size in kilobytes (a kilobyte is 1024 bytes) up to 2 decimal places. 
 
 def file_size(file_info):
 	file_name, file_type, file_size = file_info
@@ -16,7 +21,6 @@ print(file_size(('Program', 'py', 1239))) # Should print 1.21
 
 
 # The skip_elements function returns every other element from the list
-# It uses the enumerate function to check if an element is on an even position or an odd position.
 
 def skip_elements(elements):
 	# code goes here
