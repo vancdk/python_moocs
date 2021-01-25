@@ -1,3 +1,6 @@
+# While lists and strings are both sequences, a big difference between them is that lists are mutable.
+# This means that the contents of the list can be changed, unlike strings, which are immutable. You can add, remove, or modify elements in a list.
+
 # The skip_elements function returns a list containing every other element from an input list, starting with the first element. 
 
 def skip_elements(elements):
