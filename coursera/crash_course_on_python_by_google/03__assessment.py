@@ -36,8 +36,8 @@ print(digits(0))    # Should print 1
 
 
 # 4
-# Print out a multiplication table (where each number is the result of 
-# multiplying the first number of its row by the number at the top of its column).
+# Print out a multiplication table where each number is the result of 
+# multiplying the first number of its row by the number at the top of its column.
 
 def multiplication_table(start, stop):
 	for x in range(start, stop+1):
