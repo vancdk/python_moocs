@@ -35,7 +35,8 @@ Below is a snippet of code that displays the content
 of the downloads directory along with the type of content
 
 By using os.path.join we can concatenate directories 
-in a way that can be used with other os.path() functions.
+in a way that can be used with other os.path() functions
+in all operating systems.
 
 """
 
