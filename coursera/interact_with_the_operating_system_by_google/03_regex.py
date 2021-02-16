@@ -37,3 +37,6 @@ print(re.search(r"p.ng","sponge"))
 # Additional options
 print(re.search(r"p.ng","Pangaea", re.IGNORECASE))
 # Prints: <re.Match object; span=(0, 4), match='Pang'>
+
+print(re.search(r"[Pp]ython", "Python"))
+# Prints: <re.Match object; span=(0, 6), match='Python'>
