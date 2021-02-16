@@ -33,3 +33,27 @@ with open('hosts.csv', 'w') as hosts_csv:
   # Create an instance of the writer Class
   writer = csv.writer(hosts_csv)
   writer.writerows(hosts)
+                                                  
+                                                  
+"""
+How to read and write csv files with dictionaries
+
+DictReader() allows us to convert the data in a CSV file into a standard dictionary. 
+DictWriter() allows us to write data from a dictionary into a CSV file. 
+
+"""
+
+with open('software.csv') as software_csv:
+  reader = csv.DictReader(software_csv)
+  for row in reader:
+    print(("{} has {} users").format(row["name"], row["users"]))
+
+
+# Write a csv with the contents of a "users" dictionary
+keys = ["name", "username","department]
+with open('by_department.csv, 'w') as by_department:
+  writer = csv.DictWriter(by_department, fieldnames=keys)
+  writer.writeheader()
+  writer.writerows(users)
+
+
