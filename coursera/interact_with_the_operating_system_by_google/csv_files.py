@@ -20,4 +20,16 @@ for row in data:
 # Close the file to save memory space
 file.close()
 
+"""
+How to generate a csv file
 
+"""
+
+# Store the data that you want to write into a list of lists
+hosts = [["workstation.local", "192.168.25.46"], [webserver.cloud", "10.2.6.5"]]
+
+# Open the file with write permissions
+with open('hosts.csv', 'w') as hosts_csv:
+  # Create an instance of the writer Class
+  writer = csv.writer(hosts_csv)
+  writer.writerows(hosts)
