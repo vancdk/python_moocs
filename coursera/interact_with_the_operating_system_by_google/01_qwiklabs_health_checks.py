@@ -1,6 +1,6 @@
 """
 This is an executable script that does two health checks.
-First, a check_disk_usage() function that recieves a distant check and returns TRUE if it's
+First, a check_disk_usage() function that receives a distant check and returns TRUE if it's
 more than 20% free or FALSE if it's less.
 Second, a check_cpu_usage() function that checks the usage for a whole second and returns TRUE
 if the CPU usage is less than 75%.
