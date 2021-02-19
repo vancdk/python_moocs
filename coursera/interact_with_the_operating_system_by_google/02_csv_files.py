@@ -50,7 +50,7 @@ with open('software.csv') as software_csv:
 
 
 # Write a csv with the contents of a "users" dictionary
-keys = ["name", "username","department]
+keys = ["name", "username","department"]
 with open('by_department.csv, 'w') as by_department:
   writer = csv.DictWriter(by_department, fieldnames=keys)
   writer.writeheader()
