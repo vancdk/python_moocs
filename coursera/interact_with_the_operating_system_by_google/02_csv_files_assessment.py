@@ -68,7 +68,7 @@ def contents_of_file(filename):
   # Open the file
   with open(filename, 'r') as file:
     # Read the rows of the file
-    rows = rows = csv.reader(file)
+    rows = csv.reader(file)
     # Skip the header
     file.readline()
     # Process each row
@@ -80,7 +80,3 @@ def contents_of_file(filename):
 
 #Call the function
 print(contents_of_file("flowers.csv"))
-
-"""
-
-"""
