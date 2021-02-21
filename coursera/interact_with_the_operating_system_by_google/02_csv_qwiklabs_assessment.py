@@ -23,7 +23,7 @@ employee_list = read_employees("/home/student-01-2fa22347025a/data/employees.csv
 # print(employee_list)
 
 def process_data(employee_list):
-  """Recieves the list of dictionaries, i.e., employee_list as a parameter 
+  """Receives the list of dictionaries, i.e., employee_list as a parameter 
   and returns a dictionary of department:amount"""
   department_list = []
   for employee_data in employee_list:
