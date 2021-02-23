@@ -7,7 +7,7 @@ if os.path.isfile(file):
     print(os.path.isfile(file))
     print(os.path.getsize(file))
 else:
-	print(os.path.isfile(file))
+    print(os.path.isfile(file))
     print("File not found")
 
 """
@@ -15,7 +15,7 @@ Directories
 """
 
 # Get current directory
-print(os.getdw())
+print(os.getcwd())
 
 # Create directory
 os.mkdir("new_dir")
