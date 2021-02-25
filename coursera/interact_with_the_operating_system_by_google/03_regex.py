@@ -87,3 +87,31 @@ print(check_punctuation("Aren't regular expressions awesome?")) # True
 print(check_punctuation("Wow! We're really picking up some steam now!")) # True
 print(check_punctuation("End of the line")) # False
 
+"""
+Repeated matches 
+* 
++ matches 1 or more occurences of the character that comes before it
+?
+
+"""
+print(re.search(r"Py.*n","Pygmalion"))
+# Match Py followed by any number of characters followed by n
+# <re.Match object; span=(0, 9), match='Pygmalion'>
+
+print(re.search(r"Py.*n","Python Programming"))
+# <re.Match object; span=(0, 17), match='Python Programmin'>
+# The stars takes as many characters as possible (it's greedy)
+
+print(re.search(r"Py[a-z]*n","Pyn"))
+# <re.Match object; span=(0, 3), match='Pyn'>
+
+print(re.search(r"o+l+", "goldfish"))
+# <re.Match object; span=(1, 3), match='ol'>
+# There was 1 occurence of each pattern, the first one is returned
+
+print(re.search(r"o+l+", "boil"))
+# None
+# Because it had another character in between them
+
+
+
