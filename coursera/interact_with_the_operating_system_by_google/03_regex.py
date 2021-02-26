@@ -1,6 +1,8 @@
 """
 Regex expressions allow us to search a text for strings that match a certain pattern.
 
+Doc: https://docs.python.org/3/howto/regex.html
+
 """
 
 import re
