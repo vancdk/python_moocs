@@ -90,8 +90,8 @@ print(check_punctuation("End of the line")) # False
 """
 Repeated matches 
 * 
-+ matches 1 or more occurences of the character that comes before it
-?
++ matches 1 or more occurences of the character before it
+? means either 0 or 1 occurence of the character before it
 
 """
 print(re.search(r"Py.*n","Pygmalion"))
@@ -113,5 +113,25 @@ print(re.search(r"o+l+", "boil"))
 # None
 # Because it had another character in between them
 
+print(re.search(r"p?each", "To each their own"))
+# <re.Match object; span=(3, 7), match='each'>
+
+print(re.search(r"p?each", "I like peaches"))
+# <re.Match object; span=(7, 12), match='peach'>
+# The "p" was present here, so the match included it
 
 
+"""
+The repeating_letter_a function checks if the text passed 
+includes the letter "a" (lowercase or uppercase) at least twice.
+
+"""
+
+def repeating_letter_a(text):
+  result = re.search(r"[Aa].*[Aa]", text)
+  return result != None
+
+print(repeating_letter_a("banana")) # True
+print(repeating_letter_a("pineapple")) # False
+print(repeating_letter_a("Animal Kingdom")) # True
+print(repeating_letter_a("A is for apple")) # True
