@@ -1,6 +1,9 @@
 import re
 
 """
+Let's check, in a list of all the countries in the world,
+which of those names start and end in A
+
 By adding a ^ and a $ to the pattern, we only match 
 strings that stricly begin and end with the pattern.
 
