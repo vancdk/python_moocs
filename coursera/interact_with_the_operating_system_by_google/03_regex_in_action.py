@@ -40,3 +40,19 @@ print(re.search(pattern, "this isn't a valid variable name"))
 
 print(re.search(pattern, "2_my_variable"))
 # None
+
+
+"""
+Let's construct a pattern that will check if the text passed looks like a standard sentence, 
+meaning that it starts with an uppercase letter, followed by at least some lowercase letters or a space, 
+and ends with a period, question mark, or exclamation point.
+
+"""
+pattern = r"^[A-Z][ |a-z]*[.?\!]$"
+
+print(re.search(pattern, "is this is a sentence?"))
+# None
+
+print(re.search(pattern, "A star is born."))
+# match='A star is born.'
+
