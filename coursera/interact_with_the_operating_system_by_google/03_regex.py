@@ -144,10 +144,11 @@ Escape characters
 \. to match an actual dot
 
 Exceptions:
-\w matches any alphanumeric character including letters, numbers and underscores
 \d matches digits
 \s matches spaces
 \b matches word boundaries
+\w matches any alphanumeric character including letters, numbers and underscores
+   it is equivalent to the class [a-zA-Z0-9_]
 """
 
 print(re.search(r"\.com", "mydomain.com"))
