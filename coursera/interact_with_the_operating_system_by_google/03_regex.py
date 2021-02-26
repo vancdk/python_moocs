@@ -135,3 +135,24 @@ print(repeating_letter_a("banana")) # True
 print(repeating_letter_a("pineapple")) # False
 print(repeating_letter_a("Animal Kingdom")) # True
 print(repeating_letter_a("A is for apple")) # True
+
+
+"""
+Escape characters
+\. to match an actual dot
+
+Exceptions:
+\w matches any alphanumeric character including letters, numbers and underscores
+\d matches digits
+\s matches spaces
+\b matches word boundaries
+"""
+
+print(re.search(r"\.com", "mydomain.com"))
+# <re.Match object; span=(8, 12), match='.com'>
+
+print(re.search(r"\w*", "This_is_an_example"))
+# <re.Match object; span=(0, 18), match='This_is_an_example'>
+
+print(re.search(r"\w\s\w", "123  Ready Set GO"))
+# <re.Match object; span=(9, 12), match='y S'>
