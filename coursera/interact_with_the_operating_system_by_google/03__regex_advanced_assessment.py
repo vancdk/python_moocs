@@ -40,7 +40,6 @@ The convert_phone_number function checks for a U.S. phone number format: XXX-XXX
 and converts it to a more formal format that looks like this: (XXX) XXX-XXXX. 
 
 """
-
 import re
 def convert_phone_number(phone):
   result = re.sub(r"\b(\d{3})-(\d{3})-(\d{4})\b",r"(\1) \2-\3",phone)
