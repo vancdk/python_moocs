@@ -1,4 +1,6 @@
-# Calling the copy method of the os.environ dictionary will copy the current environment variables to store and prepare a new environment.
+# Calling the copy method of the os.environ dictionary will copy the current environment variables 
+# to store and prepare a new environment by creating a new dictionary of environment variables.
+
 # Link to official documentation: https://docs.python.org/3/library/subprocess.html
 
 import os
