@@ -39,4 +39,4 @@ $ wc variables.py
        8      13     169 variables.py
 
 $ echo $?
-0
+0 # the exit value is == 0 because the wc command ran successfully
