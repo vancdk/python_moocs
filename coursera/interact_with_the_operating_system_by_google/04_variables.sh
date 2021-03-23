@@ -1,3 +1,5 @@
+# Environment variables
+
 $ cat variables.py
 #!/usr/bin/env python3
 
@@ -19,3 +21,16 @@ $ ./variables.py
 HOME: /Users/vanessachaddouk
 SHELL :/bin/bash
 FRUIT: Pinapple
+
+# Command-Line Arguments and Exit Status
+$ cat parameters.py
+
+$ chmod +x ./parameters.py
+#!/usr/bin/env python3
+
+import sys
+print(sys.argv)
+
+$ ./parameters.py one two three
+['./parameters.py', 'one', 'two', 'three']
+
