@@ -12,17 +12,17 @@ print("FRUIT: "+os.environ.get("FRUIT", ""))
 $ chmod +x variables.py
 
 $ ./variables.py
-HOME: /Users/vanessachaddouk
+HOME: /Users/vancdk
 SHELL :/bin/bash
 FRUIT: 
 
 $ export FRUIT=Pinapple
 $ ./variables.py
-HOME: /Users/vanessachaddouk
+HOME: /Users/vancdk
 SHELL :/bin/bash
 FRUIT: Pinapple
 
-# Command-Line Arguments and Exit Status
+# Command-Line Arguments 
 $ cat parameters.py
 
 $ chmod +x ./parameters.py
@@ -32,5 +32,11 @@ import sys
 print(sys.argv)
 
 $ ./parameters.py one two three
-['./parameters.py', 'one', 'two', 'three']
+['./parameters.py', 'one', 'two', 'three'] # The list of arguments are stored in the sys module.
 
+# Exit Status
+$ wc variables.py 
+       8      13     169 variables.py
+
+$ echo $?
+0
